@@ -104,3 +104,28 @@ clearBtn.addEventListener('click', () => {
   });
   toolbar.classList.add('hidden');
 });
+function showToolbar(e) {
+  const selection = window.getSelection();
+  if (!selection || selection.rangeCount === 0 || selection.toString().trim() === '') {
+    toolbar.style.display = 'none';
+    return;
+  }
+
+  currentRange = selection.getRangeAt(0);
+
+  // Toolbar joylashuvi (telefon va PC uchun)
+  const rect = currentRange.getBoundingClientRect();
+  const top = rect.bottom + window.scrollY + 10;
+  const left = Math.max(10, Math.min(rect.left + rect.width / 2 - 70, window.innerWidth - 160));
+
+  toolbar.style.top = `${top}px`;
+  toolbar.style.left = `${left}px`;
+  toolbar.style.display = 'flex';
+}
+
+// ✅ Kompyuter uchun
+passage.addEventListener('mouseup', showToolbar);
+
+// ✅ Telefon uchun (qo‘shimcha)
+passage.addEventListener('touchend', showToolbar);
+
