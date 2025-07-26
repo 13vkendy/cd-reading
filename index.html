@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>IELTS Reading Practice</title>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-6 bg-gray-100">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Passage -->
+      <div
+        class="rounded shadow bg-white p-4 rounded shadow h-[400px] lg:h-[600px] overflow-y-auto"
+      >
+        <h2 class="text-xl font-bold mb-2">Sleepy Students Perform Worse</h2>
+        <p id="passage" class="text-sm leading-6">
+          A. Staying up an hour or two past bedtime makes it far harder for kids
+          to learn, say scientists who deprived youngsters of sleep and tested
+          whether their teachers could tell the difference. They could. If
+          parents want their children to thrive academically, “Getting them to
+          sleep on time is as important as getting them to school on time," said
+          psychologist Gahan Fallone, who conducted the research at Brown
+          Medical School.
+
+          <br /><br />
+          B. The study, unveiled Thursday at an American Medical Association
+          (AMA) science writers meeting, was conducted on healthy children who
+          had no evidence of sleep- or learning-related disorders. Difficulty
+          paying attention was among the problems the sleepy youngsters faced -
+          raising the question of whether sleep deprivation could prove even
+          worse for people with attention deficit hyperactivity disorder, or
+          ADHD. Fallone now is studying that question, and suspects that sleep
+          problems “could hit children with ADHD as a double whammy”.
+
+          <br /><br />
+          C. Sleep experts have long warned that Americans of all ages do not
+          get enough shuteye. Sleep is important for health, bringing a range of
+          benefits that, as Shakespeare put it, “knits up the ravelled sleave of
+          care”. Not getting enough is linked to a host of problems, from car
+          crashes as drivers doze off to crippled memory and inhibited
+          creativity. Exactly how much sleep correlates with school performance
+          is hard to prove. So, Brown researchers set out to test whether
+          teachers could detect problems with attention and learning when
+          children stayed up late - even if the teachers had no idea how much
+          sleep their students actually got.
+
+          <br /><br />
+          D. They recruited seventy-four 6- to 12-year-olds from Rhode Island
+          and southern Massachusetts for the three-week study. For one week, the
+          youngsters went to bed and woke up at their usual times. They already
+          were fairly good sleepers, getting nine to 9.5 hours of sleep a night.
+          Another week, they were assigned to spend no fewer than ten hours in
+          bed a night. The other week, they were kept up later than usual: First
+          -and second-graders were in bed no more than eight hours and the older
+          children no more than 6.5 hours. In addition to parents’ reports, the
+          youngsters wore motiondetecting wrist monitors to ensure compliance.
+
+          <br /><br />
+          E. Teachers were not told how much the children slept or which week
+          they stayed up late, but rated the students on a variety of
+          performance measures each week. The teachers reported significantly
+          more academic problems during the week of sleep deprivation, the
+          study, which will be published in the journal Sleep in December,
+          concluded. Students who got eight hours of sleep or less a night were
+          more forgetful, had the most trouble learning new lessons, and had the
+          most problems paying attention, reported Fallone, now at the Forest
+          Institute of Professional Psychology.
+
+          <br /><br />F. Sleep has long been a concern of educators.
+          Potter-Burns Elementary School sends notes to parents reminding them
+          to make sure students get enough sleep prior to the school’s yearly
+          achievement testing. Another school considers it important enough to
+          include in the school’s monthly newsletters. Definitely, there is an
+          impact on students’ performance if they come to school tired. However,
+          the findings may change physician practice, said Dr. Regina Benjamin,
+          a family physician in Bayou La Batre, who reviewed the data at the
+          Thursday’s AMA meeting. “I don't ask about sleep” when evaluating
+          academically struggling students, she noted. “I’m going to start.”
+
+          <br />
+          <br />G. So how much sleep do kids need? Recommended amounts range
+          from about ten to eleven hours a night for young elementary students
+          to 8.5 hours for teens. Fallone insists that his own second-grader get
+          ten hours a night, even when it meant dropping soccer - season that
+          practice did not start until 7:30 — too late for her to fit in dinner
+          and time to wind down before she needed to be snoozing. “It’s tough,”
+          he acknowledged, but “parents must believe in the importance of
+          sleep."
+        </p>
+      </div>
+
+      <!-- Questions -->
+      <div>
+        <h2 class="text-xl font-bold mb-2">Questions</h2>
+        <div id="questions" class="space-y-4"></div>
+        <button
+          onclick="checkAnswers()"
+          class="mt-4 px-4 py-2 bg-blue-500 text-white rounded"
+        >
+          Check Answers
+        </button>
+      </div>
+      <div
+        id="toolbar"
+        class="hidden fixed gap-2 bg-white/20 backdrop-blur-md px-2 py-1 rounded-full shadow-lg border border-white/30"
+      >
+        <button
+          id="highlightBtn"
+          class="bg-white/30 hover:bg-white/50 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full"
+        >
+          ✨ Highlight
+        </button>
+        <button
+          id="removeBtn"
+          class="bg-white/30 hover:bg-white/50 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full"
+        >
+          ❌ Remove
+        </button>
+        <button
+          id="clearBtn"
+          class="bg-white/30 hover:bg-white/50 text-gray-800 text-xs font-semibold px-2 py-0.5 rounded-full"
+        >
+          🧹 Clear
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
